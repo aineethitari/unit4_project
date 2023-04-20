@@ -16,12 +16,12 @@
 # Criteria A-Planning
 
 ## Problem Definition
-I am the a teen chef who is passionate about food and solving inequality in the society. I see that the issues of food insecurity and food waste in the society is a huge . There are many people on the streets who cannot afford to have nutritious food for them to survive. On the other hand, a large number of quality food is thrown away each day from restaurants and hotels. If the two stakeholders meet, the two problems could be eliminated. Therefore, I need a social network website that will connect the people in need of food and hotels and restaurants that have excess food to giveaway. The website should allow users to create an account secured with password, should have a feed page for those in need of food to look at the givaway events, a page for users to share about the details and locations, and a page to see the total food donated. 
+I am a teen chef who is passionate about food and solving inequality in society. I see that the interconnected issues of food insecurity and food waste are vital. Global hunger is not caused by the lack of food resources in any means, but because the food is not distributed to those who need them as 1.3 billion tons of food is wasted each year (World Food Programme). There are many people who face food insecurity which means they lack regular access to enough safe and nutritious food. This could be caused by lacking the resources to obtain food, such as money (Harmonisé). On the other hand, the U.N. Food and Agriculture Organization estimates that nearly 25% of food produced  in hotels and restaurants are thrown away each day(FAO). The problem with food waste is that these foods do not get composted and turn into methane, a greenhouse gas which is 86 times more powerful than carbon dioxide(Foodprint). Part of the problem is that many people are not aware that this problem exists, so they do not know that they are contributing to a world-wide issue when throwing away food. Moreover, some restaurants may have been giving away food, but not all people who face hunger know about these giveaways. Therefore, I am in need of a platform to connect hotels and restaurants who have excess food with people who are food insecure. 
 
 ## Success Criteria
-1. The website has a home page to educate users on the purpose of the webpage
-2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food being served
-3. The website has a secured registration and login system for the each individual user to have their own account. 
+1. The website has a home page to educate users on the issue of food insecurity and food waste
+2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food
+3. The website has a secured registration and login system for each individual user to have their own account. 
 4. The website will show how much food is donated in total
 5. The website allows user to see their profile where their post history is shown
 6. The website has an admin page for the admin to see insights such as all posts by any users
