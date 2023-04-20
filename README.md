@@ -3,6 +3,16 @@
 # Table of Content
 1. [Criteria A](#criteria-a-planning)
 
+## Problem Definition
+I am the a teen chef who is passionate about food and solving inequality in the society. I see that the issues of food insecurity and food waste in the society is a huge . There are many people on the streets who cannot afford to have nutritious food for them to survive. On the other hand, a large number of quality food is thrown away each day from restaurants and hotels. If the two stakeholders meet, the two problems could be eliminated. Therefore, I need a social network website that will connect the people in need of food and hotels and restaurants that have excess food to giveaway. The website should allow users to create an account secured with password, should have a feed page for those in need of food to look at the givaway events, a page for users to share about the details and locations, and a page to see the total food donated. 
+
+## Success Criteria
+1. The website has a home page to educate users on the purpose of the webpage
+3. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food being served
+4. The website has a secured registration and login system for the each individual user to have their own account. 
+5. The website will show how much food is donated in total
+
+
 2. [Criteria B](#criteria-b-solution-overview)
 
 3. [Criteria C](#criteria-c-development)
@@ -15,3 +25,11 @@
 
 # Criteria A-Planning
 ## Problem Definition
+
+# Criteria B-Solution Overview
+## Record of Tasks
+| Task No | Planned Action| Planned Outcome| Time estimate | Target completion date | Criterion |
+|-|--------|--------|---|---|---|
+|1|Create a repository| A repository with table of content that is easy for the client to read|7 April 2023|A|
+|2|
+
