@@ -23,6 +23,8 @@ I am the a teen chef who is passionate about food and solving inequality in the 
 2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food being served
 3. The website has a secured registration and login system for the each individual user to have their own account. 
 4. The website will show how much food is donated in total
+5. The website allows user to see their profile where their post history is shown
+6. The website has an admin page for the admin to see insights such as all posts by any users
 
 # Criteria B-Solution Overview
 ## Record of Tasks
