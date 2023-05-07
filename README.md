@@ -16,15 +16,16 @@
 # Criteria A-Planning
 
 ## Problem Definition
-I am a teen chef who is passionate about food and solving inequality in society. I see that the interconnected issues of food insecurity and food waste are vital. Global hunger is not caused by the lack of food resources in any means, but because the food is not distributed to those who need them as 1.3 billion tons of food is wasted each year (World Food Programme). There are many people who face food insecurity which means they lack regular access to enough safe and nutritious food. This could be caused by lacking the resources to obtain food, such as money (Harmonisé). On the other hand, the U.N. Food and Agriculture Organization estimates that nearly 25% of food produced  in hotels and restaurants are thrown away each day(FAO). The problem with food waste is that these foods do not get composted and turn into methane, a greenhouse gas which is 86 times more powerful than carbon dioxide(Foodprint). Part of the problem is that many people are not aware that this problem exists, so they do not know that they are contributing to a world-wide issue when throwing away food. Moreover, some restaurants may have been giving away food, but not all people who face hunger know about these giveaways. Therefore, I am in need of a platform to connect hotels and restaurants who have excess food with people who are food insecure. 
+I am a teen chef who is passionate about food and solving inequality in society. I see that the interconnected issues of food insecurity and food waste are vital. The problem is that people are not aware that the problems exist, so they throw away foods that are still fresh and edible. Restaurants and hotels do that on a larger scale. Some restaurants may have been giving away leftover food, but not all people who face hunger know about where these giveaways take place, or what kind of food is being donated. Restaurants and hotels need a platform to share what foods they are giving away to spread the words. Some restaurants may have problems with keeping track of the giveaways they have done, so they need an organized separated system to keep track of the foods that have been donated. As I am studying about this issue, I would like to see an overview of the whole donations that has happened by different restaurants. The most important thing is that I want people to be mindful that the platform is for those who are facing food insecurity and for the planet, so that no one takes the food for granted.
+
 
 ## Success Criteria
-1. The website has a home page to educate users on the issue of food insecurity and food waste
-2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food
-3. The website has a secured registration and login system for each individual user to have their own account. 
-4. The website will show how much food is donated in total
-5. The website allows user to see their profile where their post history is shown
-6. The website has an admin page for the admin to see insights such as all posts by any users
+1. The website has a home page to educate users on the issue of food insecurity and food waste (issue tackled: People are unaware of the global issue)
+2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food (issue tackled: People do not know the details of existing giveaways)
+3,The website allows users to type in the specific details of the food they are giving away (issue tackled: Restaurants need a platform to announce giveaways)
+4. The website has a login and register system for users to post giveaways in their individual accounts(Issue tackled: Restaurants need to keep track of the foods they have donated individually)
+5. The website has an admin page where the admin can look at the all posts created by every users (Issue tackled: See an overview of the whole donations)
+6. The website has a green theme to remind users that the purpose of this platform is to save the world (Issue tackled: Some people might take the platform for granted if they view it as a free food platform)
 
 # Criteria B-Solution Overview
 ## Record of Tasks
@@ -33,4 +34,8 @@ I am a teen chef who is passionate about food and solving inequality in society.
 |1|Create a repository| A repository with table of content that is easy for the client to read|7 April 2023|A|
 |2|Define a problem definition|A problem definition that includes all the information about what the client needs for the program|20 min| 8 April 2023|A|
 |3|Create a success criteria|A list of criterias that the developer need to meet|15 min|8 April 2023| A|
+|4| Create base template| A base template for every page|30 min| 10 April 2023| C|
+|5|Create registration page| A page with a form to submit registration details to the database|1 hr| 12 April 2023| C|
+|6| Create login page| A page with a form to login that redirects to the next profile page| 1 hr| 12 April 2023| C|
+|7| Create a landing page| A page with the simple details of the website and two buttons that allow users to register or login| 30 min| 13 April 2023| C|
 
