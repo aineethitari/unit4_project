@@ -38,4 +38,7 @@ I am a teen chef who is passionate about food and solving inequality in society.
 |5|Create registration page| A page with a form to submit registration details to the database|1 hr| 12 April 2023| C|
 |6| Create login page| A page with a form to login that redirects to the next profile page| 1 hr| 12 April 2023| C|
 |7| Create a landing page| A page with the simple details of the website and two buttons that allow users to register or login| 30 min| 13 April 2023| C|
-
+|8| Create a page to show all giveaways| A page to show the list of foods that are being given away|30 min| 14 April 2023| C|
+|9| Create a profile page| A page showing all the posts by the individual user and a form to submit new posts| 2 hr| 18 April 2023| C|
+|10| Edit the format of the website| The website has a common theme in the same color for the buttons and the background| 30 min| 20 April 2023| C|
+|11| Check success criteria and problem definition| Success criteria tha aligns with the problem definition| 1 hr| 21 April 2023| A|
