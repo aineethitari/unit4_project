@@ -31,7 +31,7 @@ I am a teen chef who is passionate about food and solving inequality in society.
 ## Record of Tasks
 | Task No | Planned Action| Planned Outcome| Time estimate | Target completion date | Criterion |
 |-|--------|--------|---|---|---|
-|1|Create a repository| A repository with table of content that is easy for the client to read|7 April 2023|A|
+|1|Create a repository| A repository with table of content that is easy for the client to read|5 min|7 April 2023|A|
 |2|Define a problem definition|A problem definition that includes all the information about what the client needs for the program|20 min| 8 April 2023|A|
 |3|Create a success criteria|A list of criterias that the developer need to meet|15 min|8 April 2023| A|
 |4| Create base template| A base template for every page|30 min| 10 April 2023| C|
