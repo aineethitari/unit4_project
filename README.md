@@ -58,6 +58,9 @@ The system diagram shows the relationships between each component of the project
 ![Unit4-4](https://user-images.githubusercontent.com/112055062/236826948-e737deff-b089-420a-a512-63dd8708a5f2.jpg)
 *Fig.* This is the wireframe diagram of the program which shows the different pages that can be accessed on the website. The pages include a landing page, login page, registration page, profile page, all post page (shows the past posts by the users), and an admin page that shows the list of all users.  
 
+## Flow Diagrams
+
+![Login Flow diagram unit4](https://user-images.githubusercontent.com/112055062/236862095-e7027833-1f43-42f6-8b0c-c89077455e6f.jpeg)
 
 ## ER Diagram
 ## UML Diagram
