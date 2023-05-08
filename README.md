@@ -56,6 +56,7 @@ The system diagram shows the relationships between each component of the project
 ## Wireframe Diagram
 
 ![Unit4-4](https://user-images.githubusercontent.com/112055062/236826948-e737deff-b089-420a-a512-63dd8708a5f2.jpg)
+*Fig.* This is the wireframe diagram of the program which shows the different pages that can be accessed on the website. The pages include a landing page, login page, registration page, profile page, all post page (shows the past posts by the users), and an admin page that shows the list of all users.  
 
 
 ## ER Diagram
@@ -78,7 +79,8 @@ The system diagram shows the relationships between each component of the project
 |13| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
 |14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
 |15| Create a system diagram| Visual diagram with all the components of the project| 1 hr| 24 April 2023| B|
-|16| 
+|16| Create Wire Frame Diagram| Wireframe diagram that shows the functionality of the website and how each pages connect to each other| 1 hr| 24 April 2023| B|
+
 
 # Criteria D-Functionality
 ## Citations
