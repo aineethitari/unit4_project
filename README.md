@@ -70,7 +70,12 @@ The system diagram shows the relationships between each component of the project
 *Fig.* Registration Diagram
 
 ## ER Diagram
+
+
 ## UML Diagram
+![UML Diagram](https://user-images.githubusercontent.com/112055062/236878313-0cd29f4b-98ea-4de5-96ca-e385ae2f565e.jpeg)
+*Fig* UML Diagram
+
 ## Record of Tasks
 | Task No | Planned Action| Planned Outcome| Time estimate | Target completion date | Criterion |
 |-|--------|--------|---|---|---|
