@@ -1,18 +1,20 @@
 # Unit 4 Project Social Network Website
 
 # Table of Content
-1. [Appendices](#appendices)
-2. [Criteria A](#criteria-a-planning)
 
-3. [Criteria B](#criteria-b-solution-overview)
+1. [Criteria A](#criteria-a-planning)
 
-4. [Criteria C](#criteria-c-development)
+2. [Criteria B](#criteria-b-solution-overview)
 
-5. [Criteria D](#criteria-d-functionality)
+3. [Criteria C](#criteria-c-development)
 
-6. [Citation](#citation)
+4. [Criteria D](#criteria-d-functionality)
 
-7. [Whole Code](#whole-code)
+5. [Citation](#citation)
+
+6. [Whole Code](#whole-code)
+
+7. [Appendix](#appendix)
 
 # Criteria A-Planning
 
