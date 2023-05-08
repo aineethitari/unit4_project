@@ -27,7 +27,7 @@ I am a teen chef who is passionate about food and solving inequality in society.
 2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food (*issue tackled: People do not know the details of existing giveaways*)
 3. The website allows users to post the specific details of the food they are giving away (*issue tackled: Restaurants need a platform to announce giveaways*)
 4. The website has a login and register system for users to post giveaways in their individual accounts(*Issue tackled: Restaurants need to keep track of the foods they have donated individually*)
-5. The website has an admin page where the admin can look at the all posts created by every users (*Issue tackled: See an overview of the whole donations*)
+5. The website has an admin page where the admin can look at all the posts created by every users (*Issue tackled: See an overview of the whole donations*)
 6. The website has a green theme to remind users that the purpose of this platform is to save the world (*Issue tackled: Some people might take the platform for granted if they view it as a free food platform*)
 
 ## Design statement
