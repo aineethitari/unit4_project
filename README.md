@@ -66,6 +66,9 @@ The system diagram shows the relationships between each component of the project
 ![new post diagram](https://user-images.githubusercontent.com/112055062/236869686-8c32a187-0d4b-4e22-9cbc-bb37f852caa7.jpeg)
 *Fig.* New Post Diagram
 
+![registration flowchart unit 4](https://user-images.githubusercontent.com/112055062/236875212-2c580b33-dd8e-4eac-9d8d-c27632b77c8a.jpeg)
+*Fig.* Registration Diagram
+
 ## ER Diagram
 ## UML Diagram
 ## Record of Tasks
@@ -87,6 +90,9 @@ The system diagram shows the relationships between each component of the project
 |14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
 |15| Create a system diagram| Visual diagram with all the components of the project| 1 hr| 24 April 2023| B|
 |16| Create Wire Frame Diagram| Wireframe diagram that shows the functionality of the website and how each pages connect to each other| 1 hr| 24 April 2023| B|
+|17| Create Flow Diagram for login system| Flow diagram that shows how the program works step by step| 30 min| 25 April 2023| B|
+|18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
+|19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
 
 
 # Criteria D-Functionality
