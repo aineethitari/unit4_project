@@ -62,7 +62,9 @@ Finally, I have chosen to use SQLite for the database management system because 
 |10| Edit the format of the website| The website has a common theme in the same color for the buttons and the background| 30 min| 20 April 2023| C|
 |11| Check success criteria and problem definition| Success criteria tha aligns with the problem definition| 1 hr| 21 April 2023| A|
 |12| Consultation with people in the community| Ideas on the existing problems and how to solve it| 30 min| 22 April 2023| A|
-|13| 
+|13| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
+|14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
+|15|
 
 # Criteria D-Functionality
 ## Citations
