@@ -47,6 +47,14 @@ Finally, I have chosen to use SQLite for the database management system because 
 
 
 # Criteria B-Solution Overview
+## System Diagram
+
+![System Diagram Unit4](https://user-images.githubusercontent.com/112055062/236818257-95f6f890-4477-4091-a20b-843eb032904d.jpeg)
+*Fig* This is the system diagram for the proposed solution
+
+## Wireframe Diagram
+## ER Diagram
+## UML Diagram
 ## Record of Tasks
 | Task No | Planned Action| Planned Outcome| Time estimate | Target completion date | Criterion |
 |-|--------|--------|---|---|---|
@@ -64,7 +72,7 @@ Finally, I have chosen to use SQLite for the database management system because 
 |12| Consultation with people in the community| Ideas on the existing problems and how to solve it| 30 min| 22 April 2023| A|
 |13| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
 |14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
-|15|
+|15| 
 
 # Criteria D-Functionality
 ## Citations
