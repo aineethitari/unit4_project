@@ -50,7 +50,8 @@ Finally, I have chosen to use SQLite for the database management system because 
 ## System Diagram
 
 ![System Diagram Unit4](https://user-images.githubusercontent.com/112055062/236818257-95f6f890-4477-4091-a20b-843eb032904d.jpeg)
-*Fig* This is the system diagram for the proposed solution
+*Fig.* This is the system diagram for the proposed solution
+The system diagram shows the relationships between each component of the project. This includes the inputs from the keyboard and the mouse to the computer Apple Mac Book Pro 2020 with Mac OS Monterey 12.6. Within the computer there is the Python 3.11 programming language which is used to create the functionalities and connects the SQL database and the web browser. 
 
 ## Wireframe Diagram
 ## ER Diagram
@@ -72,7 +73,8 @@ Finally, I have chosen to use SQLite for the database management system because 
 |12| Consultation with people in the community| Ideas on the existing problems and how to solve it| 30 min| 22 April 2023| A|
 |13| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
 |14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
-|15| 
+|15| Create a system diagram| Visual diagram with all the components of the project| 1 hr| 24 April 2023| B|
+|16| 
 
 # Criteria D-Functionality
 ## Citations
