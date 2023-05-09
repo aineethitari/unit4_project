@@ -109,7 +109,8 @@ The system diagram shows the relationships between each component of the project
 |18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
 |19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
 |20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
-|21| Upload picture of the two tables in the databases| 15 min | 28 April 2023|B|
+|21| Upload picture of the two tables in the databases| users table and posts table| 5 min | 28 April 2023|B|
+|22|
 
 
 # Criteria C-Development
@@ -122,10 +123,31 @@ The system diagram shows the relationships between each component of the project
 6. SQLite3
 7. passlib for password hashing
 8. Cookies
-9. 
-## Computational Thinking
+9. Variables
+10. Functions
+11. Lists
+12. Jinja
 
+## Development
+### Base Template
 
+```.html
+<style>
+        body{background-color: #e2f5d7;}
+```
+My client wants the website to have a common environmental theme, so I created a base template which will be applied on every other screens of the webpage. The base template comprise of a CSS style the sets the background of the website to be green as green is the color that represents the environment and sustainability. The html color code for this specific green is #e2f5d7.
+
+```.html
+    <a href="http://127.0.0.1:5000/">
+    <img src="/static/freshsurplus2.png" alt="fresh surplus logo" class="center"
+         width="80"></a>
+    <h1>Fresh Surplus</h1>
+```
+The base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raiseawareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
+
+At first, I did not know how to create a header that is the same for every page, so I was going to duplicate it on all of the html files. I want to follow the DRY programming paradigm, so I researched and end up with using the base template, which is extremely useful.
+
+### 
 
 # Criteria D-Functionality
 ## Citations
