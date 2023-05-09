@@ -73,6 +73,14 @@ The system diagram shows the relationships between each component of the project
 ![ER Diagram unit 4](https://user-images.githubusercontent.com/112055062/236963126-6ad6d690-3fc2-4402-a511-200299403dc6.jpeg)
 *Fig* ER Diagram
 
+### Example of Database
+
+<img width="571" alt="users table" src="https://user-images.githubusercontent.com/112055062/236968894-a10258d9-3fa8-4668-ae51-221f3a603878.png">
+**Fig.** users table in database which stores the user accounts
+<img width="903" alt="posts database" src="https://user-images.githubusercontent.com/112055062/236969180-e54d0b43-3466-4ed0-a6e1-40f47f46ad9d.png">
+**Fig.** posts table in database which stores the donation posts by the users 
+
+
 ## UML Diagram
 ![UML Diagram](https://user-images.githubusercontent.com/112055062/236878313-0cd29f4b-98ea-4de5-96ca-e385ae2f565e.jpeg)
 *Fig* UML Diagram
