@@ -137,7 +137,9 @@ The system diagram shows the relationships between each component of the project
 <style>
         body{background-color: #e2f5d7;}
 ```
-My client wants the website to have a common environmental theme, so I created a base template which will be applied on every other screens of the webpage. The base template comprise of a CSS style the sets the background of the website to be green as green is the color that represents the environment and sustainability. The html color code for this specific green is #e2f5d7.
+My client wants the website to have a common environmental theme, so I used my computation thinking skills to think of what it takes to have an environmental theme. I decomposed 'environmental theme' into two sections which are the color and some symbol that hints a meaning. Therefore I decided to set the background color to be universal among all pages of the website. Green would be the best color for an environmental and sustainability themr, so I used #e2f5d7.
+
+At first, I was going to duplicate it on all of the html files. Then I recognized the pattern and I want to follow the DRY programming paradigm, so I researched and use the base template to store the common HTML and CSS tags in every page.
 
 ```.html
     <a href="http://127.0.0.1:5000/">
@@ -145,7 +147,7 @@ My client wants the website to have a common environmental theme, so I created a
          width="80"></a>
     <h1>Fresh Surplus</h1>
 ```
-The base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raise awareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
+As I decomposed my tasks and thinking, the base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raise awareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
 
 To apply the base template on other pages, the pages need to have this line:
 ```.html 
@@ -159,7 +161,7 @@ The content of individual pages will be wrapped in here. Followed by:
 ```.html
 {% endblock %}
 ```
-At first, I did not know how to create a header that is the same for every page, so I was going to duplicate it on all of the html files. I want to follow the DRY programming paradigm, so I researched and end up with using the base template, which is extremely useful.
+
 
 ### Registration System
 ```.py
@@ -208,7 +210,74 @@ Firstly, the data base is connected with the method ```database_worker ```. Then
 ```
 If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
 
-### Using Cookies for Individual Profile Page
+### Creating New Posts
+ According to success criteria 3, the restaurants need to be able to post donations with specific details. I think that the best way to do this is through a form with many sub-sections, not one text field for them to type freely. It is important for the post to include the essential information such as title, locaiton, date, time, and description. Using my computational skills, I start this section by deviding the tasks into smaller parts. Firstly, I started with the display by writing a HTML form with the information that should be included in the posts. 
+ 
+ ```.html
+ <form method="post" class="centerwide">
+    <p class="centerwide">Title <input type="text" name="title" placeholder="Enter the title"></p>
+    <p class="centerwide">Location <input type="text" name="location" placeholder="Enter the location"></p>
+    <p class="centerwide">Date  <input type="text" name="date" placeholder="Enter the date"></p>
+    <p class="centerwide">Time <input type="text" name="time" placeholder="Enter the time"></p>
+    <p class="centerwide">Description <input type="text" name="description" placeholder="Enter the description" </p>
+    <input type="submit" value="Save" class="button">
+```
+The HTML code above shows the form that is used to submit the information about the donations. Each form text field has its own name which is used to connect with the functionality in python. 
+```.py
+db = database_worker("social_net.db")
+    if request.method == 'POST':
+        title = request.form['title']
+        location = request.form['location']
+        date = request.form['date']
+        time = request.form['time']
+        description = request.form['description']
+        if len(title)>0 :
+            new_post = f"""INSERT into posts(title, location, date, time, description, user_id) values 
+            ('{title}','{location}', '{date}','{time}','{description}','{user_id}')"""
+            db.run_save(new_post)
+            return redirect(url_for("profile",user_id=user_id))
+ ```
+I then work on the python code to create the functionality. I used my computation thinking skills of pattern recognition to see that the steps are very similar to the registration system which also uses POST method from flask, so I used the registration system code as a reference. I requested the information entered by the users through the POST method into the variables title, location, date, time, and description. Then there's an if statement to make sure there is something added to the title by checking that the length of the title string is more than 0. If so, the information in the variables will be put in an sql command for inserting the data to the database stored in a variable ```new_post```. Then I execute the program through ```run_save```, so the information is saved. The program then redirects the user to the same page, but the page will be refreshed wich shows the updated information. 
+
+### Feed page showing all posts
+According to Success criteria 2, my client wants a feed page which allows people who are food insecure to come check the available food donations easily. I used algorithmic design to think in the shoes of a person using the website. If I want it to be easy for them to access the information, there shoould not be any complicated steps required. Therefore, I decided that there should not be any login verification for users who are looing at the food donation options.
+
+```.html
+<div>
+        <h2>Looking for free food?</h2>
+        <a href = "http://127.0.0.1:5000/allposts">
+            <input type="button" class="button" value="Check out free fresh surplus!"
+        </a>
+```
+In the landing page, there is an eye-catching text which asks if the user is looking for free food or not. Then the text is followed by a big button that allows user to click to see free leftover foods or fresh surplus. Once the user click the button, the page will be redirected to the 'allposts' page which has all the post history by every user in the social network.
+
+After thinking about how to reach the wide audience, I design the best way to make the information understandable and organized for the users who are looking for food. 
+
+```.html
+<table>
+        <tr><!--row-->
+            <th>id</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Description</th>
+        </tr>
+        {% for i in allposts %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>{{ i[4] }}</td>
+            <td>{{ i[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+```
+I believe that the best way to showcase the information is through an organized table as the information is in the same format of id, title, location, date, time and description. 
+
+ ### Using Cookies for Individual Profile Page
 ```.py
 resp = make_response(redirect(url_for('profile',user_id=id)))
                     resp.set_cookie('user_id',f"{id}")
@@ -224,24 +293,7 @@ def profile(user_id):
         user_id = request.cookies.get('user_id') #store cookies in the variable user_id 
 ```
 The cookies from the login form stores the ```<user_id>```. Then I store the data in the cookies to the user_id variable which involves the specific profile page. 
-
-### Creating New Posts
-
-```.py
-db = database_worker("social_net.db")
-    if request.method == 'POST':
-        title = request.form['title']
-        location = request.form['location']
-        date = request.form['date']
-        time = request.form['time']
-        description = request.form['description']
-        if len(title)>0 :
-            new_post = f"""INSERT into posts(title, location, date, time, description, user_id) values 
-            ('{title}','{location}', '{date}','{time}','{description}','{user_id}')"""
-            db.run_save(new_post)
-            return redirect(url_for("profile",user_id=user_id))
- ```
- According to success criteria 3, the restaurants need to be able to post donations with specific details. I think that the best way to do this is throuh a form with many sub-sections, not one text field for them to type freely. It is important for the post to include the essential information such as title, locaiton, date, time, and description 
+ 
 
 # Criteria D-Functionality
 ## Citations
