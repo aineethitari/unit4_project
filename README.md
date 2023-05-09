@@ -88,6 +88,7 @@ The system diagram shows the relationships between each component of the project
 ## Test Plan
 |Description|Test Type|Input|Expected Output|
 |----|--|----------------|----------------|
+|Test for registration system | Unit Test| 1.Open Website 2.Click Register button on the landing page 3.Enter 'james@gmail.com' in Email text field 4.Enter 'tomorrowland' in the enter password text field 5.Enter 'tomorrowland' in the confirm password field 6.Click register button|After clicking the register button, the website should be redirected to the login page. This registration system is to fulfill success criteria 4|
 
 
 ## Record of Tasks
