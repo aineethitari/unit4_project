@@ -143,7 +143,7 @@ My client wants the website to have a common environmental theme, so I created a
          width="80"></a>
     <h1>Fresh Surplus</h1>
 ```
-The base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raiseawareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
+The base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raise awareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
 
 To apply the base template on other pages, the pages need to have this line:
 ```.html 
@@ -153,7 +153,7 @@ followed by:
 ```.html
 {% block content %} 
 ```
-The content of individual pages will be wrapped in here.
+The content of individual pages will be wrapped in here. Followed by:
 ```.html
 {% endblock %}
 ```
@@ -166,7 +166,19 @@ db = database_worker('social_net.db') #connect to database
             if existing_user: #if email exists
                 message = "User with that email already registered. Go to Login" #message shows that this user email already exists
 ```
-According to success criteria 4, the client wants the restaurants and hotels to post donations on their individual accounts. Therefore, I created a registration system where users have their own account. This ensures that there is an organized way in storing the donation history by hotels and restaurants. The code above shows how there can only be one single account per email that is entered
+According to success criteria 4, the client wants the restaurants and hotels to post donations on their individual accounts. Therefore, I created a registration system where users can only have their own single account. This ensures that there is an organized way in storing the donation history by hotels and restaurants. The code above shows how there can only be one single account per email that is entered. 
+
+Firstly, the data base is connected with the method ```database_worker ```. Then the program will search in the table ```users``` from the database where the email is equal to the email that was entered through the registration form. I then use the if statement with a message inside to tell the users that the email already exists. 
+
+```.py
+            else:
+                new_user = f"""INSERT into users(email,password) values(
+                '{email}','{encrypt_password(passwd)}')""" # sql command for saving the entered email and hashed password to the database 
+                db.run_save(new_user) #execute the sql command
+                db.close() #close database
+```
+If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
+
 
 # Criteria D-Functionality
 ## Citations
