@@ -187,7 +187,7 @@ Success criteria 4, requires website to have a registration system, so I created
     <input type = "submit" class="button" value="Register">
 </form>
 ```
-
+This is the registratio form element in the HTML file which is stated at the beginning that the POST method is used in this form. Then, each section has its own ```<div>``` tag with the paragraph text and an input box. This is repeated for the email, the password, and the confirm password field. Lastly, there is a submit button for the users to submit the form.  
 
 ```.py
 db = database_worker('social_net.db') #connect to database 
