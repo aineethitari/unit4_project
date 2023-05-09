@@ -89,6 +89,7 @@ The system diagram shows the relationships between each component of the project
 |Description|Test Type|Input|Expected Output|
 |----|--|----------------|----------------|
 |Test for registration system | Unit Test| 1.Open Website 2.Click Register button on the landing page 3.Enter 'james@gmail.com' in Email text field 4.Enter 'tomorrowland' in the enter password text field 5.Enter 'tomorrowland' in the confirm password field 6.Click register button|After clicking the register button, the website should be redirected to the login page. This registration system is to fulfill success criteria 4|
+|Test for existing account in registration system|Unit Test|1.Open Website 2.Click Register button on the landing page 3.Enter 'james@gmail.com' in Email text field 4.Enter 'marshmallow' in the enter password text field 5.Enter 'marshmallow' in the confirm password field 6.Click register button| After clicking the registration button, the website should show a message that 'user with that email is already registered. Go to login'. This fulfills success criteria 4 where users cannot create account with same email.|
 
 
 ## Record of Tasks
@@ -127,6 +128,7 @@ The system diagram shows the relationships between each component of the project
 |31|Write about feed page showing all posts| Detailed description of the feed page which explains the decision behind having all posts|1 hr| 6 May 2023| C|
 |32| Write about cookies| Detailed explanation on the purpose of using cookies and how it works in the program| 1 hr| 6 May 2023| C|
 |33|Create a test plan| A tabel with all the test plans for the website| 30 min| 7 May 2023| B|
+|34| Tested for the registration system| Registration system functions| 5 min| 8 May 2023| B|
 
 
 
