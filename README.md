@@ -70,7 +70,8 @@ The system diagram shows the relationships between each component of the project
 *Fig.* Registration Diagram
 
 ## ER Diagram
-
+![ER Diagram unit 4](https://user-images.githubusercontent.com/112055062/236963126-6ad6d690-3fc2-4402-a511-200299403dc6.jpeg)
+*Fig* ER Diagram
 
 ## UML Diagram
 ![UML Diagram](https://user-images.githubusercontent.com/112055062/236878313-0cd29f4b-98ea-4de5-96ca-e385ae2f565e.jpeg)
@@ -98,6 +99,8 @@ The system diagram shows the relationships between each component of the project
 |17| Create Flow Diagram for login system| Flow diagram that shows how the program works step by step| 30 min| 25 April 2023| B|
 |18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
 |19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
+|20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.| 27 April 2023| B|
+
 
 
 # Criteria D-Functionality
