@@ -208,7 +208,40 @@ Firstly, the data base is connected with the method ```database_worker ```. Then
 ```
 If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
 
+### Using Cookies for Individual Profile Page
+```.py
+resp = make_response(redirect(url_for('profile',user_id=id)))
+                    resp.set_cookie('user_id',f"{id}")
+                    return resp
+```
+My client wants users to be able to have a specific profile page to be able to post their donations organizely. Therefore, each user needs to have their own specific separated user page, so I store the user_id of the logged in user in the cookies. The user is then redirected to the 'profile' page which is specific to each user_id.
 
+```.py
+@app.route('/user/<user_id>',methods=['GET','POST'])
+def profile(user_id):
+    if request.cookies.get('user_id'): #check if cookies exist
+        print("The cookie was found") #message that the cookie exists 
+        user_id = request.cookies.get('user_id') #store cookies in the variable user_id 
+```
+The cookies from the login form stores the ```<user_id>```. Then I store the data in the cookies to the user_id variable which involves the specific profile page. 
+
+### Creating New Posts
+
+```.py
+db = database_worker("social_net.db")
+    if request.method == 'POST':
+        title = request.form['title']
+        location = request.form['location']
+        date = request.form['date']
+        time = request.form['time']
+        description = request.form['description']
+        if len(title)>0 :
+            new_post = f"""INSERT into posts(title, location, date, time, description, user_id) values 
+            ('{title}','{location}', '{date}','{time}','{description}','{user_id}')"""
+            db.run_save(new_post)
+            return redirect(url_for("profile",user_id=user_id))
+ ```
+ According to success criteria 3, the restaurants need to be able to post donations with specific details. I think that the best way to do this is throuh a form with many sub-sections, not one text field for them to type freely. It is important for the post to include the essential information such as title, locaiton, date, time, and description 
 
 # Criteria D-Functionality
 ## Citations
