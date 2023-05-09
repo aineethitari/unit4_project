@@ -76,9 +76,10 @@ The system diagram shows the relationships between each component of the project
 ### Example of Database
 
 <img width="571" alt="users table" src="https://user-images.githubusercontent.com/112055062/236968894-a10258d9-3fa8-4668-ae51-221f3a603878.png">
-**Fig.** users table in database which stores the user accounts
+*Fig.* users table in database which stores the user accounts
+
 <img width="903" alt="posts database" src="https://user-images.githubusercontent.com/112055062/236969180-e54d0b43-3466-4ed0-a6e1-40f47f46ad9d.png">
-**Fig.** posts table in database which stores the donation posts by the users 
+*Fig.* posts table in database which stores the donation posts by the users 
 
 
 ## UML Diagram
@@ -108,6 +109,21 @@ The system diagram shows the relationships between each component of the project
 |18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
 |19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
 |20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
+|21| Upload picture of the two tables in the databases| 15 min | 28 April 2023|B|
+
+
+# Criteria C-Development
+## Techniques Used
+1. Python
+2. Flask library 
+3. HTML
+4. CSS Styling Display
+5. Object Oriented Programing (OOP)
+6. SQLite3
+7. passlib for password hashing
+8. Cookies
+9. 
+## Computational Thinking
 
 
 
