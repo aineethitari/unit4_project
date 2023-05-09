@@ -99,7 +99,7 @@ The system diagram shows the relationships between each component of the project
 |17| Create Flow Diagram for login system| Flow diagram that shows how the program works step by step| 30 min| 25 April 2023| B|
 |18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
 |19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
-|20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.| 27 April 2023| B|
+|20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
 
 
 
