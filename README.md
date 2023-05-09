@@ -137,7 +137,7 @@ The system diagram shows the relationships between each component of the project
 <style>
         body{background-color: #e2f5d7;}
 ```
-My client wants the website to have a common environmental theme, so I used my computation thinking skills to think of what it takes to have an environmental theme. I decomposed 'environmental theme' into two sections which are the color and some symbol that hints a meaning. Therefore I decided to set the background color to be universal among all pages of the website. Green would be the best color for an environmental and sustainability themr, so I used #e2f5d7.
+My client wants the website to have a common environmental theme, so I used my computation thinking skills to think of what it takes to have an environmental theme. I decomposed 'environmental theme' into two sections which are the color and some symbol that hints a meaning. Therefore I decided to set the background color to be universal among all pages of the website. Green would be the best color for an environmental and sustainability theme, so I used #e2f5d7.
 
 At first, I was going to duplicate it on all of the html files. Then I recognized the pattern and I want to follow the DRY programming paradigm, so I researched and use the base template to store the common HTML and CSS tags in every page.
 
