@@ -110,7 +110,9 @@ The system diagram shows the relationships between each component of the project
 |19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
 |20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
 |21| Upload picture of the two tables in the databases| users table and posts table| 5 min | 28 April 2023|B|
-|22|
+|22|Write the techniques used in the development| a list of techniques that was used| 5 min| 1 May 2023| C|
+|23| Write the description of the base template code| detailed explanation with mentioning of the computational thinking behind it| 1 hr| 2 May 2023| C|
+|24| Write the description in the development of the registration system| A detailed explanation of the registration system| 1 hr| 3 May 2023| C|
 
 
 # Criteria C-Development
@@ -161,6 +163,33 @@ At first, I did not know how to create a header that is the same for every page,
 
 ### Registration System
 ```.py
+    if request.method == 'POST': # if the user fills the form
+        email = request.form['email'] # email that the user filled in the form is stored in email variable
+        passwd = request.form['passwd'] #  password that the user filled in the form is stored in passwd variable
+        passwd_check = request.form['passwd_check'] # password confirmation that the user filled in the form is saved in passwd_check variable
+```
+Success criteria 4, requires website to have a registration system, so I created a registration system which is done through an HTML form with a ```POST``` method to send the data to the web server. The if-statement checks whether there has been a POST request method, or there has been a form filled. Then if it is true, the information from the form is saved in to variables. The data from the email field is saved to the ```email``` variable, the password is saved to ```passwd``` variable, and the password confirmation field is saved to the ```passwd_check``` variable. I save all of this information to the variables because the variable will be used later on for saving the information to the database.
+
+```.html
+<form method="POST">
+    <div>
+        <p>Email: </p>
+        <input type = "email" placeholder="enter your email" name="email">
+    </div>
+    <div>
+        <p>Enter password:</p>
+        <input type="password" name="passwd">
+    </div>
+    <div>
+        <p>Confirm Password:</p>
+        <input type = "password" name="passwd_check">
+    </div>
+    <input type = "submit" class="button" value="Register">
+</form>
+```
+
+
+```.py
 db = database_worker('social_net.db') #connect to database 
             existing_user = db.get(f"SELECT * from users where email='{email}'") #search for the same email that the user have filled in the form in the database
             if existing_user: #if email exists
@@ -178,6 +207,7 @@ Firstly, the data base is connected with the method ```database_worker ```. Then
                 db.close() #close database
 ```
 If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
+
 
 
 # Criteria D-Functionality
