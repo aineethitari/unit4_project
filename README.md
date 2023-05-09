@@ -94,25 +94,35 @@ The system diagram shows the relationships between each component of the project
 |3|Create a success criteria|A list of criterias that the developer need to meet|15 min|8 April 2023| A|
 |4| Create base template| A base template for every page|30 min| 10 April 2023| C|
 |5|Create registration page| A page with a form to submit registration details to the database|1 hr| 12 April 2023| C|
-|6| Create login page| A page with a form to login that redirects to the next profile page| 1 hr| 12 April 2023| C|
-|7| Create a landing page| A page with the simple details of the website and two buttons that allow users to register or login| 30 min| 13 April 2023| C|
-|8| Create a page to show all giveaways| A page to show the list of foods that are being given away|30 min| 14 April 2023| C|
-|9| Create a profile page| A page showing all the posts by the individual user and a form to submit new posts| 2 hr| 18 April 2023| C|
-|10| Edit the format of the website| The website has a common theme in the same color for the buttons and the background| 30 min| 20 April 2023| C|
-|11| Check success criteria and problem definition| Success criteria tha aligns with the problem definition| 1 hr| 21 April 2023| A|
-|12| Consultation with people in the community| Ideas on the existing problems and how to solve it| 30 min| 22 April 2023| A|
-|13| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
-|14| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
-|15| Create a system diagram| Visual diagram with all the components of the project| 1 hr| 24 April 2023| B|
-|16| Create Wire Frame Diagram| Wireframe diagram that shows the functionality of the website and how each pages connect to each other| 1 hr| 24 April 2023| B|
-|17| Create Flow Diagram for login system| Flow diagram that shows how the program works step by step| 30 min| 25 April 2023| B|
-|18| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
-|19| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
-|20| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
-|21| Upload picture of the two tables in the databases| users table and posts table| 5 min | 28 April 2023|B|
-|22|Write the techniques used in the development| a list of techniques that was used| 5 min| 1 May 2023| C|
-|23| Write the description of the base template code| detailed explanation with mentioning of the computational thinking behind it| 1 hr| 2 May 2023| C|
-|24| Write the description in the development of the registration system| A detailed explanation of the registration system| 1 hr| 3 May 2023| C|
+|6| Code the functionality for the registration system on python| The program for registration system works that HTML form|2hr| 12 April 2023 C|
+|7| Create login page| A page with a form to login that redirects to the next profile page| 1 hr| 12 April 2023| C|
+|8| Create a landing page| A page with the simple details of the website and two buttons that allow users to register or login| 30 min| 13 April 2023| C|
+|9| Create a page to show all giveaways| A page to show the list of foods that are being given away|30 min| 14 April 2023| C|
+|10| Code the python part of the allposts page| The functionality should work that the information form the database is being posted on the website|1hr|15 April 2023| C|
+|11| Create a profile page| A page showing all the posts by the individual user and a form to submit new posts| 2 hr| 18 April 2023| C|
+|12| Create the form for new posts| An HTML form that allows user to upload information about the food donation| 2 hr| 18 April 2023| C|
+|13| Code the python for new posts| The form for adding new posts fully functions, being able to send the information to the database|2hr|19 April 2023|C|
+|14| Edit the format of the website| The website has a common theme in the same color for the buttons and the background| 30 min| 20 April 2023| C|
+|15| Create the admin page for the website| Page where the admin can see every posts by each individual user| 1 hr| 20 April 2023| C| 
+|16| Check success criteria and problem definition| Success criteria tha aligns with the problem definition| 1 hr| 21 April 2023| A|
+|17| Consultation with people in the community| Ideas on the existing problems and how to solve it| 30 min| 22 April 2023| A|
+|18| Write design statement| Explanation of the platform that will be developed|15 min| 23 April 2023| A|
+|19| Write rationale for proposed solution| Detailed explanation of the decisions behind the proposed solution including all the techniques that are used| 2 hr| 23 April 2023| A|
+|20| Create a system diagram| Visual diagram with all the components of the project| 1 hr| 24 April 2023| B|
+|21| Create Wire Frame Diagram| Wireframe diagram that shows the functionality of the website and how each pages connect to each other| 1 hr| 24 April 2023| B|
+|22| Create Flow Diagram for login system| Flow diagram that shows how the program works step by step| 30 min| 25 April 2023| B|
+|23| Create Flow Diagram for registration system| Flow diagram that shows how the registration works| 30 min| 25 April 2023| B|
+|24| Create Flow Diagram for new post page| Flow diagram that shows how new posts are being created| 30 min| 26 April 2023| B|
+|25| Create ER Diagram for the database|ER Diagram that shows the connections between thetables in the database.|30 min| 27 April 2023| B|
+|26| Upload picture of the two tables in the databases| users table and posts table| 5 min | 28 April 2023|B|
+|27|Write the techniques used in the development| a list of techniques that was used| 5 min| 1 May 2023| C|
+|28| Write the description of the base template code| detailed explanation with mentioning of the computational thinking behind it| 1 hr| 2 May 2023| C|
+|29| Write the description in the development of the registration system| A detailed explanation of the registration system| 1 hr| 3 May 2023| C|
+|30| Write about creating new posts| Detailed explanation of how the post section works| 1 hr| 4 May 2023| C|
+|31|Write about feed page showing all posts| Detailed description of the feed page which explains the decision behind having all posts|1 hr| 6 May 2023| C|
+|32| Write about cookies| Detailed explanation on the purpose of using cookies and how it works in the program| 1 hr| 6 May 2023| C|
+|33|Create a test plan| A tabel with all the test plans for the website| 30 min| 7 May 2023| B|
+
 
 
 # Criteria C-Development
