@@ -145,23 +145,28 @@ My client wants the website to have a common environmental theme, so I created a
 ```
 The base template also has a header that appears in every screen with the logo of the website. The logo is linked to another web address http://127.0.0.1:5000/ which is the landing page. The image freshsurplus2.png is the logo which is placed in the middle of the screen above a header that says Fresh Surplus. When the user clicks the image of the logo, then they will always be redirected to the landing page which has a raiseawareness section about the issue of food insecurity and food waste. This is for the success criteria 1 which tackles the issue that people are not aware of the problem.
 
-To apply the base template on other pages, the pages need to have this line
+To apply the base template on other pages, the pages need to have this line:
 ```.html 
 {% extends "base_template.html" %}
 ```
-followed by
+followed by:
 ```.html
 {% block content %} 
 ```
+The content of individual pages will be wrapped in here.
 ```.html
 {% endblock %}
 ```
-
-
 At first, I did not know how to create a header that is the same for every page, so I was going to duplicate it on all of the html files. I want to follow the DRY programming paradigm, so I researched and end up with using the base template, which is extremely useful.
 
 ### Registration System
-
+```.py
+db = database_worker('social_net.db') #connect to database 
+            existing_user = db.get(f"SELECT * from users where email='{email}'") #search for the same email that the user have filled in the form in the database
+            if existing_user: #if email exists
+                message = "User with that email already registered. Go to Login" #message shows that this user email already exists
+```
+According to success criteria 4, the client wants the restaurants and hotels to post donations on their individual accounts. Therefore, I created a registration system where users have their own account. This ensures that there is an organized way in storing the donation history by hotels and restaurants. The code above shows how there can only be one single account per email that is entered
 
 # Criteria D-Functionality
 ## Citations
