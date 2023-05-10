@@ -1,4 +1,7 @@
-# Unit 4 Project Social Network Website
+# Unit 4 Project Social Network Website "Fresh Surplus"
+
+![trash food](https://github.com/aineethitari/unit4_project/assets/112055062/495b98a0-50d2-4aff-8cb9-4fe7f5acb016)
+
 
 # Table of Content
 
