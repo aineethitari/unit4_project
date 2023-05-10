@@ -94,8 +94,8 @@ The system diagram shows the relationships between each component of the project
 |Test for database connection| Unit Test|  1.Open Website 2.Click Register button on the landing page 3.Enter 'james@gmail.com' in Email text field 4.Enter 'tomorrowland' in the enter password text field 5.Enter 'tomorrowland' in the confirm password field 6.Click register button| After clicking the register button, check the database table users. The previous user account entered should be shown on the table once the table is refreshed.|
 |Test for login system| Unit Test| 1.Open Website 2.Click Login button 3.Enter email james@gmail.com in the email field 4.Enter password 'tomorrowland' in the password field 5.Press login button| After clicking the login button, the website should redirect to the user/user_id page.|
 |Test error in login system| Unit Test|1.Open Website 2.Click Login button 3.Enter email james@gmail.com in the email field 4.Enter password 'myname12345' in the password field 5.Press login button|After clicking login, the program should not redirect to any other pages, but the information filled in the fields will disappear|
-|Test create new post form| Unit Test| 1.Open profile page with create new post form 2.Fill in the title, location, date, time, and description 3.Click save button |After clicking the save button, the program should show the post on the poste table.|
-|Test create new blank post|Unit Test|1.Open profile page with create new post form 2.Fill in only the title field 3.Click save button| After clicking the save button the website will refresh, but there will be no updates to the post table|
+|Test create new post form| Integration| 1.Open Website 2.Click Login button 3.Enter email james@gmail.com in the email field 4.Enter password 'tomorrowland' in the password field 5.Press login button 6.Fill in the title, location, date, time, and description 7.Click save button |After clicking the save button, the program should show the post on the poste table.|
+|Test create new blank post|Unit Test|1.Open Website 2.Click Login button 3.Enter email james@gmail.com in the email field 4.Enter password 'tomorrowland' in the password field 5.Press login button 6.Fill in only the title field 7.Click save button| After clicking the save button the website will refresh, but there will be no updates to the post table|
 
 
 
@@ -137,6 +137,8 @@ The system diagram shows the relationships between each component of the project
 |32| Write about cookies| Detailed explanation on the purpose of using cookies and how it works in the program| 1 hr| 6 May 2023| C|
 |33|Create a test plan| A tabel with all the test plans for the website| 30 min| 7 May 2023| B|
 |34| Tested for the registration system| Registration system functions| 5 min| 8 May 2023| B|
+|35|Edit code for registration system | Registration fully works with no minor errors| 20 min| 8 May 2023| C|
+|36| Test the login system| User successfully logs in to their profile page| 5 min| 8 May 2023
 
 
 
