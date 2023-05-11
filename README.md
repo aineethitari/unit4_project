@@ -53,28 +53,28 @@ Finally, I have chosen to use SQLite for the database management system because 
 ## System Diagram
 
 ![System Diagram Unit4](https://user-images.githubusercontent.com/112055062/236818257-95f6f890-4477-4091-a20b-843eb032904d.jpeg)
-*Fig.* This is the system diagram for the proposed solution
+*Fig.1* This is the system diagram for the proposed solution
 The system diagram shows the relationships between each component of the project. This includes the inputs from the keyboard and the mouse to the computer Apple Mac Book Pro 2020 with Mac OS Monterey 12.6. Within the computer there is the Python 3.11 programming language which is used to create the functionalities and connects the SQL database and the web browser. 
 
 ## Wireframe Diagram
 
 ![Unit4-4](https://user-images.githubusercontent.com/112055062/236826948-e737deff-b089-420a-a512-63dd8708a5f2.jpg)
-*Fig.* This is the wireframe diagram of the program which shows the different pages that can be accessed on the website. The pages include a landing page, login page, registration page, profile page, all post page (shows the past posts by the users), and an admin page that shows the list of all users.  
+*Fig.2* This is the wireframe diagram of the program which shows the different pages that can be accessed on the website. The pages include a landing page, login page, registration page, profile page, all post page (shows the past posts by the users), and an admin page that shows the list of all users.  
 
 ## Flow Diagrams
 
 ![Login Flow diagram unit4](https://user-images.githubusercontent.com/112055062/236862095-e7027833-1f43-42f6-8b0c-c89077455e6f.jpeg)
-*Fig.* Login Diagram
+*Fig.3* Flow diagram of the Login Diagram where the user python function receives information of the login entered by the user through a form and then checks if it matches with the database to proceed on.
 
 ![new post diagram](https://user-images.githubusercontent.com/112055062/236869686-8c32a187-0d4b-4e22-9cbc-bb37f852caa7.jpeg)
-*Fig.* New Post Diagram
+*Fig.4* Flow diagram for new posts section in the program where users are allowed to enter information of the food donation to the form then later adds to the sql database.
 
 ![registration flowchart unit 4](https://user-images.githubusercontent.com/112055062/236875212-2c580b33-dd8e-4eac-9d8d-c27632b77c8a.jpeg)
-*Fig.* Registration Diagram
+*Fig.5* Registration Diagram flow diagram where user enters the information of creating an account and there is a password validation policy and the user information will then be added to the database.
 
 ## ER Diagram
 ![ER Diagram unit 4](https://user-images.githubusercontent.com/112055062/236963126-6ad6d690-3fc2-4402-a511-200299403dc6.jpeg)
-*Fig* ER Diagram
+*Fig.6* ER Diagram shows the relationship between the table 'users' and 'posts' in the database.
 
 ### Example of Database
 
@@ -86,7 +86,7 @@ The system diagram shows the relationships between each component of the project
 
 ## UML Diagram
 ![UML Diagram](https://user-images.githubusercontent.com/112055062/236878313-0cd29f4b-98ea-4de5-96ca-e385ae2f565e.jpeg)
-*Fig* UML Diagram
+*Fig* UML Diagram shows the class 'database_worker' which is used in the program
 
 ## Test Plan
 |Description|Test Type|Input|Expected Output|
