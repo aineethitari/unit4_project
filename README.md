@@ -370,7 +370,7 @@ My peer have stated that they website is approaching a right direction where all
 
 ## Recommendations
 ### 1. Image Options
-My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence-of-consultation]). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
+My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence of consultation] (##evidence-of-consultation)). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
 
 ### 2. Order of the post page
 My cl
