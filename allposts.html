@@ -1,0 +1,37 @@
+{% extends "base_template.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Surplus</title>
+</head>
+<body>
+    <h1>Checkout the free fresh surplus!</h1>
+    <div class="centerwide">
+    <table>
+        <tr><!--row-->
+            <th>id</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Description</th>
+        </tr>
+        {% for i in allposts %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>{{ i[4] }}</td>
+            <td>{{ i[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+
+
+</body>
+</html>
+{% endblock %}
