@@ -1,0 +1,62 @@
+{% extends "base_template.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if user %}
+    <title>Profile Page for {{ user[1] }}</title>
+    {% else %}
+    <title>User not found</title>
+    {% endif %}
+
+</head>
+<body>
+{% if user %}
+    <h1>Dear, {{ user[1] }}</h1>
+    <h2>Thank you for saving lives and the planet</h2>
+    {% if posts|length>0 %}
+    <h3>Your posts are:</h3>
+    <div class="centerwide">
+    <table>
+        <tr>
+            <th>id</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Description</th>
+        </tr>
+
+{# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td>{{ p[0] }}</td> {# id #}
+        <td>{{ p[1] }}</td> {# title #}
+        <td>{{ p[2] }}</td> {# location #}
+        <td>{{ p[3] }}</td> {# date #}
+        <td>{{ p[4] }}</td> {# time #}
+        <td>{{ p[5] }}</td> {# description #}
+
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+{% else %}
+        <p>You don't have post yet</p>
+{% endif %}
+<h2>Create a new post</h2>
+<form method="post" class="centerwide">
+    <p class="centerwide">Title <input type="text" name="title" placeholder="Enter the title"></p>
+    <p class="centerwide">Location <input type="text" name="location" placeholder="Enter the location"></p>
+    <p class="centerwide">Date  <input type="text" name="date" placeholder="Enter the date"></p>
+    <p class="centerwide">Time <input type="text" name="time" placeholder="Enter the time"></p>
+    <p class="centerwide">Description <input type="text" name="description" placeholder="Enter the description" </p>
+    <input type="submit" value="Save" class="button">
+{% else %}
+    <h1>User does not exist</h1>
+{% endif %}
+</form>
+</body>
+</html>
+{% endblock %}
