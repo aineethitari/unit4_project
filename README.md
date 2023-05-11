@@ -152,6 +152,12 @@ The system diagram shows the relationships between each component of the project
 
 
 # Criteria C-Development
+## Existing Tools
+1. Flask
+2. Jinja2
+3. SQLite3
+4. Passlib.hash
+
 ## Techniques Used
 1. Python
 2. Flask library 
@@ -330,6 +336,24 @@ After thinking about how to reach the wide audience, I design the best way to ma
 ```
 I believe that the best way to showcase the information is through an organized table as the information is in the same format of id, title, location, date, time and description. 
 
+### Admin Page
+Success criteria 5 requires an admin page in which the admin can see all users in the database and can go through each of their profiles. 
+
+```.py
+db=database_worker("social_net.db")
+    all_users = db.search("SELECT * FROM users")
+```
+I searched for all of the users by selecting all information of the users from the users table
+```.py
+  {% for u in users %}
+    <tr>
+        <td><a href="{{ url_for('profile', user_id=u[0]) }}">No{{ u[0] }}</td> <!--first element = id, 2nd element = email-->
+        <td>{{ u[1] }}</td> {# email #}
+    </tr>
+    {% endfor %}
+```
+Then I added a link to every users which the link is the profile page with according to the user id of the user. This results in a list of all users with link to their profile page.
+
  ### Using Cookies for Individual Profile Page
 ```.py
 resp = make_response(redirect(url_for('profile',user_id=id)))
@@ -370,10 +394,10 @@ My peer have stated that they website is approaching a right direction where all
 
 ## Recommendations
 ### 1. Image Options
-My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence of Consultation](#appendix)). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
+My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 3 in [Evidence of Consultation](#appendix)). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
 
 ### 2. Order of the post page
-My cl
+My client recommended that the all posts feed page would be better if the most recent post is on the top of the list. This would be better when there are a lot of posts and users want to see the most recent post for the recent giveaways.(see figure 2 in [Evidence of Consultation](#appendix))
 
 
 
