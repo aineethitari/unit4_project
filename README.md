@@ -371,9 +371,7 @@ The cookies from the login form stores the ```<user_id>```. Then I store the dat
  
 
 # Criteria D-Functionality
-## Citations
-1. H., Tania, and Vlad V. “Pros and Cons of Mobile Websites and Mobile Apps.” RubyGarage, rubygarage.org/blog/mobile-app-vs-mobile-website. 
-2. Singhal, Piyush. “What Are the Advantages of HTML?” Scaler Topics, Scaler Topics, 17 Oct. 2022, www.scaler.com/topics/advantages-of-html/. 
+Link to the video on YouTube https://youtu.be/Vt89ADE9GAM
 
 # Criteria E-Evaluation
 ## Evaluation by Client
