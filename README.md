@@ -13,9 +13,9 @@
 
 4. [Criteria D](#criteria-d-functionality)
 
-5. [Citation](#citation)
+5. [Appendix](#appendix)
 
-7. [Appendix](#appendix)
+6. [Citation](#citation)
 
 # Criteria A-Planning
 
@@ -410,6 +410,16 @@ My client recommended that the all posts feed page would be better if the most r
 ![IMG_7700](https://github.com/aineethitari/unit4_project/assets/112055062/eb232a9a-4b3f-4cf5-9486-7443c9c921b2)
 *Fig.3* Email feedback of the full website from peer 
 
+# Citation
+1. H., Tania, and Vlad V. “Pros and Cons of Mobile Websites and Mobile Apps.” RubyGarage, rubygarage.org/blog/mobile-app-vs-mobile-website. 
+2. Singhal, Piyush. “What Are the Advantages of HTML?” Scaler Topics, Scaler Topics, 17 Oct. 2022, www.scaler.com/topics/advantages-of-html/. 
+3. “Why Use CSS?” Why Use CSS? · WebPlatform Docs, webplatform.github.io/docs/tutorials/learning_why_we_use_css/. 
+4. “Learn Hub.” How Much Does Python Cost?, www.nobledesktop.com/learn/python/cost#:~:text=Python%20is%20an%20open%2Dsource,and%20libraries%20at%20no%20charge. 
+5. Korsun, Julia. “The 16 Most Important Pros and Cons of Using Python for Web Development.” Software Development Blog & IT Tech Insights | Django Stars, 10 Feb. 2023, djangostars.com/blog/python-web-development/. 
+6. Admin. “Advantages of Sqlite.” W3schools, 4 Aug. 2022, www.w3schools.blog/advantages-sqlite. 
+7. Lara, Christopher. “5 Reasons to Use a Content Management System.” TheeDigital, 3 May 2023, www.theedigital.com/blog/top-reasons-to-use-a-content-management-system#:~:text=It%20depends%20on%20your%20specific,could%20be%20a%20better%20choice. 
+8. Raval, Nihar. “NodeJS vs Python - Which Language Is Best for Backend Web Development?” Radixweb, Radixweb, 20 Apr. 2023, radixweb.com/blog/nodejs-vs-python. 
+9. S., Edward. “SQLite vs Mysql – What's the Difference.” Hostinger Tutorials, 21 Dec. 2022, www.hostinger.com/tutorials/sqlite-vs-mysql-whats-the-difference/#:~:text=Multiple%20Access%20and%20Scalability%20%E2%80%93%20SQLite%20vs%20MySQL,-SQLite%20does%20not&text=MySQL%20has%20a%20well%2Dconstructed,gets%20larger%20while%20using%20SQLite. 
 
 
 
