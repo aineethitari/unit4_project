@@ -143,8 +143,9 @@ The system diagram shows the relationships between each component of the project
 |36| Test the login system| User successfully logs in to their profile page| 5 min| 8 May 2023|B|
 |37| Test for all posts page| Page show all the posts that have been uploaded| 5 min| 9 May 2023|B|
 |38| Test for create new post page| Post filled in the form shows up on the table| 5 min| 9 May 2023| B|
-|39| Ask peer for feedback| Detailed evaluation of the whole website| 10 min| 9 May 2023| B|
-|40|Ask client and peer for recommendation| Detailed reccomendation of how the website could go| 15 min| 9 May 2023| B|
+|39| Ask peer for feedback| Detailed evaluation of the whole website| 10 min| 9 May 2023| E|
+|40|Ask client and peer for recommendation| Detailed reccomendation of how the website could go| 15 min| 9 May 2023| E|
+|41|Record video| Video with full explanation of the webpage|1 hr|9 May 2023|D|
 
 
 
