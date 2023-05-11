@@ -1,0 +1,38 @@
+{% extends "base_template.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the best SNS</title>
+    <link rel="stylesheet" href="/static/my_style.css">
+</head>
+<body>
+    <div class="box">
+        <h1 align="center">Login Form</h1>
+        <form role="form" method="post">
+
+          <div class="inputBox">
+            <input type="text" name="email" autocomplete="off" required>
+            <label>Email</label>
+          </div>
+          <div class="inputBox">
+            <input type="password" name="passwd" autocomplete="off" required>
+            <label>Password</label>
+          </div>
+
+          <input type="submit" name="login" value="Login">
+
+
+
+        </form>
+    </div>
+
+    <div class="test123"> {# registration button #}
+        <p>Don't have an account?</p>
+        <a href = "http://127.0.0.1:5000/registration">
+            <input type="button" class="button" value="Registration"></a>
+    </div>
+
+
+
+</body>
+{% endblock %}
