@@ -145,6 +145,8 @@ The system diagram shows the relationships between each component of the project
 |36| Test the login system| User successfully logs in to their profile page| 5 min| 8 May 2023|B|
 |37| Test for all posts page| Page show all the posts that have been uploaded| 5 min| 9 May 2023|B|
 |38| Test for create new post page| Post filled in the form shows up on the table| 5 min| 9 May 2023| B|
+|39| Ask peer for feedback| Detailed evaluation of the whole website| 10 min| 9 May 2023| B|
+|40|Ask client and peer for recommendation| Detailed reccomendation of how the website could go| 15 min| 9 May 2023| B|
 
 
 
@@ -244,8 +246,22 @@ Firstly, the data base is connected with the method ```database_worker ```. Then
 ```
 If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
 
-### Login
+### Login System
+```.py
+        if len(email)>0 and len(passwd)>0: # if email and password length is more than 0
+            db = database_worker('social_net.db') # connect to the databse
+            user = db.search(f"SELECT * from users where email='{email}'") #search that the entered email matches the email in the database
+```
+According to success criteria 4, the clients want a login system. I created the login system by comparing the email that is in the database to the email that the user input for logging in. 
 
+```.py
+if check_password(hashed=hash, user_password=passwd): #checks whether password matches the hashed password
+    resp = make_response(redirect(url_for('profile',user_id=id))) # redirect to profile page
+    resp.set_cookie('user_id',f"{id}") #set user_id in the cookies
+    print("password is correct")
+    return resp
+```
+The program then checks the password whether it matches the password that is hashed. If the password matches, then the the page redirect to the url for the profile page. It also stores the user_id in the cookies.
 
 ### Creating New Posts
  According to success criteria 3, the restaurants need to be able to post donations with specific details. I think that the best way to do this is through a form with many sub-sections, not one text field for them to type freely. It is important for the post to include the essential information such as title, locaiton, date, time, and description. Using my computational skills, I start this section by deviding the tasks into smaller parts. Firstly, I started with the display by writing a HTML form with the information that should be included in the posts. 
@@ -337,8 +353,41 @@ The cookies from the login form stores the ```<user_id>```. Then I store the dat
 1. H., Tania, and Vlad V. “Pros and Cons of Mobile Websites and Mobile Apps.” RubyGarage, rubygarage.org/blog/mobile-app-vs-mobile-website. 
 2. Singhal, Piyush. “What Are the Advantages of HTML?” Scaler Topics, Scaler Topics, 17 Oct. 2022, www.scaler.com/topics/advantages-of-html/. 
 
+# Criteria E-Evaluation
+## Evaluation by Client
+|Success Critreria|Met?|Description|
+|-----------------|---|-----------------|
+|1. The website has a home page to educate users on the issue of food insecurity and food waste (issue tackled: People are unaware of the global issue)|Yes|The home page has a text section which describes the details of the situation of food insecurity and food waste and explains how the social network works to solve the issue|
+|2. The website has a feed page where users can scroll through and look at the available food giveaways with the important details such as location, and general description of the food (issue tackled: People do not know the details of existing giveaways)|Yes|The users can go to the 'allposts' page which shows all the posts that have been posted with all the important details.|
+|3. The website has a page for users to type in the specific details of the food they are giving away (issue tackled: Restaurants need a platform to announce giveaways)|Yes|The users can post the food they are giving away by filling out the form in the 'profile' page.|
+|4. The website has a login and register system for users to post giveaways in their individual accounts(Issue tackled: Restaurants need to keep track of the foods they have donated individually)|Yes|The users can create a new accout and login to the same account. They can also look at their own profile page which has posts exclusively to the ones they posted to be organized|
+|5. The website has an admin page where the admin can look at the all posts created by every users (Issue tackled: See an overview of the whole donations)|Yes|There's a '/user' page where there's a list of all usernames and the admin can look into each profiles.|
+|6. The website has a green theme to remind users that the purpose of this platform is to save the world (Issue tackled: Some people might take the platform for granted if they view it as a free food platform)|Yes|There is a base template which makes sure that all the pages have a common theme with green color.|
+
+## Evaluation by Peer
+
+My peer have stated that they website is approaching a right direction where all the essential functions are fulfilled to solve the issue. However, they believe that it would be better if the display and aesthetics, such as transitions and animations, of the website is developed further. 
+
+## Recommendations
+### 1. Image Options
+My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence-of-consultation]). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
+
+### 2. Order of the post page
+My cl
+
+
+
 # Appendix
 ## Evidence of Consultation
 ![IMG_7673](https://user-images.githubusercontent.com/112055062/236713666-64b71fc8-9534-4506-ab8d-e6b33f4edd47.jpg)
-*Fig.* Interview with people who are passionate about equality and the sustainability on what they think about the topics. They have identified their needs in connecting restaurants and people who are facing food insecurity.
+*Fig.1* Interview with people who are passionate about equality and the sustainability on what they think about the topics. They have identified their needs in connecting restaurants and people who are facing food insecurity.
+
+![IMG_7699](https://github.com/aineethitari/unit4_project/assets/112055062/91842da1-4e51-4ad2-ab4f-f452d4897746)
+*Fig.2* Email feedback of the full website from client
+
+![IMG_7700](https://github.com/aineethitari/unit4_project/assets/112055062/eb232a9a-4b3f-4cf5-9486-7443c9c921b2)
+*Fig.3* Email feedback of the full website from peer 
+
+
+
 
