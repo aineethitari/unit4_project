@@ -15,8 +15,6 @@
 
 5. [Citation](#citation)
 
-6. [Whole Code](#whole-code)
-
 7. [Appendix](#appendix)
 
 # Criteria A-Planning
