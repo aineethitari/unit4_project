@@ -370,7 +370,7 @@ My peer have stated that they website is approaching a right direction where all
 
 ## Recommendations
 ### 1. Image Options
-My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence of consultation] (##evidence-of-consultation)). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
+My peer recommended that the website would be better if there is a section for uploading the image of the food giveaways (see figure 2 in [Evidence of Consultation] (#evidence-of-consultation)). Which I agree to that users might want to see images whent they look through the giveaway options. The image could also be used to tell where the giveaway location is.
 
 ### 2. Order of the post page
 My cl
@@ -378,7 +378,7 @@ My cl
 
 
 # Appendix
-## Evidence of Consultation
+# Evidence of Consultation
 ![IMG_7673](https://user-images.githubusercontent.com/112055062/236713666-64b71fc8-9534-4506-ab8d-e6b33f4edd47.jpg)
 *Fig.1* Interview with people who are passionate about equality and the sustainability on what they think about the topics. They have identified their needs in connecting restaurants and people who are facing food insecurity.
 
