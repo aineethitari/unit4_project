@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/my_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <style>
+        body{background-color: #e2f5d7;}
+        h1, h2, h3{text-align: center; padding: 10px;}
+        p{padding: 10px;}
+        img{border-radius: 50%;}
+
+    </style>
+    <title>{{ base_template }}</title>
+</head>
+<body>
+    <a href="http://127.0.0.1:5000/">
+    <img src="/static/freshsurplus2.png" alt="fresh surplus logo" class="center"
+         width="80"></a>
+    <h1>Fresh Surplus</h1>
+    {% block content %}{% endblock %}
+</body>
+</html>
