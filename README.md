@@ -110,7 +110,7 @@ The system diagram shows the relationships between each component of the project
 |3|Create a success criteria|A list of criterias that the developer need to meet|15 min|8 April 2023| A|
 |4| Create base template| A base template for every page|30 min| 10 April 2023| C|
 |5|Create registration page| A page with a form to submit registration details to the database|1 hr| 12 April 2023| C|
-|6| Code the functionality for the registration system on python| The program for registration system works that HTML form|2hr| 12 April 2023 C|
+|6| Code the functionality for the registration system on python| The program for registration system works that HTML form|2hr| 12 April 2023| C|
 |7| Create login page| A page with a form to login that redirects to the next profile page| 1 hr| 12 April 2023| C|
 |8| Create a landing page| A page with the simple details of the website and two buttons that allow users to register or login| 30 min| 13 April 2023| C|
 |9| Create a page to show all giveaways| A page to show the list of foods that are being given away|30 min| 14 April 2023| C|
