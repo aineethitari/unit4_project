@@ -1,0 +1,26 @@
+{% extends "base_template.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> This is the table of users </h1>
+<table class="center">
+    <tr><!--row-->
+        <th>id</th>
+        <th>email</th>
+    </tr>
+{# template language jinja2 #}
+    {% for u in users %}
+    <tr>
+        <td><a href="{{ url_for('profile', user_id=u[0]) }}">No{{ u[0] }}</td> <!--first element = id, 2nd element = email-->
+        <td>{{ u[1] }}</td> {# email #}
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}
