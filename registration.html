@@ -1,0 +1,37 @@
+{% extends "base_template.html" %}
+{% block content %}
+<head>
+    <style>
+        div{text-align: center}
+        form{text-align: center}
+    </style>
+</head>
+<body>
+<h1>Registration</h1>
+{% if msg %}{# if there's a variable call message show div #}
+<div>{{ msg }}</div>
+{% endif %}
+<form method="POST">
+    <div>
+        <p>Email: </p>
+        <input type = "email" placeholder="enter your email" name="email">
+    </div>
+    <div>
+        <p>Enter password:</p>
+        <input type="password" name="passwd">
+    </div>
+    <div>
+        <p>Confirm Password:</p>
+        <input type = "password" name="passwd_check">
+    </div>
+    <input type = "submit" class="button" value="Register">
+</form>
+
+<div>
+    <p>Already have an account?</p>
+    <a href = "http://127.0.0.1:5000/login">
+        <input type="button" class="button" value="Login"></a>
+</div>
+
+</body>
+{% endblock %}
