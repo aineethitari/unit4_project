@@ -244,6 +244,9 @@ Firstly, the data base is connected with the method ```database_worker ```. Then
 ```
 If the user is new and does not exist in the database, the entered email and password would then be inserted to the database. To do this, I used the variable ```new_user``` which stores the sql command for inserting the email and a hashed password using the ```encrypt_password``` method. The command in ```new_user``` is then executed with the ```run_save``` method. To end off, the database is then closed. 
 
+### Login
+
+
 ### Creating New Posts
  According to success criteria 3, the restaurants need to be able to post donations with specific details. I think that the best way to do this is through a form with many sub-sections, not one text field for them to type freely. It is important for the post to include the essential information such as title, locaiton, date, time, and description. Using my computational skills, I start this section by deviding the tasks into smaller parts. Firstly, I started with the display by writing a HTML form with the information that should be included in the posts. 
  
