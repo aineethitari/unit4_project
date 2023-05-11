@@ -1,0 +1,27 @@
+{% extends "base_template.html" %}
+{% block content %}
+    <head>
+        <style>
+            div{text-align: center}
+        </style>
+    </head>
+    <body>
+    <h2>About Us!</h2>
+    <h3>
+        Fresh Surplus is a social network that aims to solve the global issue of food insecurity and food waste by connecting hotels and restaurants to those who are food insecure.
+    </h3>
+    <h2>Create account now to contribute!</h2>
+    <div>
+    <a href = "http://127.0.0.1:5000/login">
+        <input type="button" class="button" value="Login"></a> {# login button #}
+    <a href = "http://127.0.0.1:5000/registration">
+        <input type="button" class="button" value="Registration"></a>
+    </div>
+    <div>
+        <h2>Looking for free food?</h2>
+        <a href = "http://127.0.0.1:5000/allposts">
+            <input type="button" class="button" value="Check out free fresh surplus!"
+        </a>
+    </div>
+    </body>
+{% endblock %}
